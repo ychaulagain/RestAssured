@@ -35,7 +35,7 @@ public class UserEndPoints {
                 .put(Routes.update_url);
 
     }
-    public static Response delete(String userName) {
+    public static Response deleteUser(String userName) {
         return given()
                 .pathParam("username", userName)
                 .when()
